@@ -28,7 +28,7 @@ function rps() {
     var userInput = $("#userInput").val();
     $("#finalResult").hide();
     if(userInput == null || userInput == ''){
-        alert("Input text cannot be Null/Empty and it should be one of Rock/Scissors/Paper")
+        alert("Input text cannot be Null/Empty Please enter Rock/Scissors/Paper")
     }else{
         <!-- Getting Random Choice -->
         var randomChoice = Math.random();
@@ -85,16 +85,16 @@ function rps() {
 
 </script>
 
-<body background="rps.png">
+<body background="rps1.png">
 
     <!-- Rock beats Scissors, Scissors beats paper, Paper beats Rock -->
 
     <!-- Asking for User Choice through a Text Box -->
     <br/><br/>
     <div align="center">
-    <label style="color: red">Enter Your Input (Rock/Scissors/Paper) : </label>
+    <label style="color: darkblue">Enter Rock/Scissors/Paper : </label>
         <input type="text" id="userInput"/>
-        <button onclick="javascript:rps()">Get my Result !!</button>
+        <button onclick="javascript:rps()"> GO!!</button>
         <br/><br/><br/>
         <div align="center" id="finalResult" style="display: none">
         </div>
